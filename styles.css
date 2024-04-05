@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  background-color: #fafafa;
+  font-family: "Poppins" sans-serif;
+  display: grid;
+  grid-template-areas:
+    "lateral-esquerda barra-pesquisa barra-pesquisa barra-pesquisa"
+    "lateral-esquerda main main main"
+    "lateral-esquerda cards-content cards-content cards-content"
+    "lateral-esquerda content content content"
+    "lateral-esquerda content content content";
+  /* height: 90vh; */
+  width: 100%;
+}
+
+/* LATERAL ESQUERDA */
+
+#lateral-esquerda {
+  grid-area: lateral-esquerda;
+  width: 100%;
+  height: 90%;
+  background-color: #fafafa;
+}
+
+.marca {
+  font-weight: bold;
+  display: flex;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #fafafa;
+  color: #87b344;
+}
+.marca img {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+}
+nav {
+  position: relative;
+  padding: 10px;
+  background-color: #fafafa;
+  height: 100%;
+  width: 120px;
+  overflow: hidden;
+  transition: 1s;
+  top: 0;
+  bottom: 0;
+  left: 4;
+}
+
+nav:hover {
+  position: relative;
+  background-color: #fafafa;
+  height: 85vh;
+  overflow: hidden;
+  transition: 1s;
+  top: 0;
+  bottom: 0;
+  left: 4;
+  font-size: small;
+  width: 280px;
+  transition: 1s;
+  /* height: 89vh; */
+  /* padding: 10px; */
+}
+
+li:hover {
+  background: #87b344;
+  transition: 1s;
+  position: relative;
+  left: 2px;
+}
+
+.material-symbols-outlined:hover {
+  color: #0b5202;
+}
+
+nav ul li {
+  position: relative;
+  font-size: medium;
+  padding: 15px;
+  left: 30px;
+}
+
+nav .material-symbols-outlined {
+  position: relative;
+  color: #87b344;
+  right: 105px;
+}
+
+nav ul {
+  list-style-type: none;
+  position: relative;
+  left: 50px;
+}
+
+.lista3 {
+  background-color: #fafafa;
+  position: relative;
+  top: 150px;
+}
+
+.lista2 {
+  background-color: #fafafa;
+  position: relative;
+  top: 90px;
+}
+
+/* ---------------------------- */
+
+/* BARRA DE PESQUISA/MEIO CIMA */
+
+#barra-pesquisa {
+  padding: 10px;
+  border: #87b34448 10px solid;
+  width: 100%;
+  height: 75%;
+  background-color: white;
+  grid-area: barra-pesquisa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#barra-pesquisa img {
+  height: 50px;
+  width: 50px;
+  border-radius: 70%;
+  position: relative;
+  top: 9px;
+}
+
+#barra-pesquisa .material-symbols-outlined {
+  color: white;
+}
+
+#barra-pesquisa-texto {
+  background: transparent;
+}
+
+.barra-pesquisa-texto h2 {
+  background-color: white;
+}
+
+.perfil {
+  position: relative;
+  display: flex;
+  right: 30px;
+}
+
+#perfil {
+  background-color: white;
+}
+
+.perfil h3 {
+  background-color: white;
+}
+
+.perfil .material-symbols-outlined {
+  position: relative;
+  display: flex;
+  top: 22px;
+  color: #87b344;
+}
+
+/* ----------------------- ----------*/
+
+/* MAIN, ACIMA DOS CARDS */
+
+#main {
+  grid-area: main;
+  display: flex;
+  background-color: #fafafa;
+  justify-content: center;
+}
+
+.texto1 {
+  position: relative;
+  top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(85, 85, 85);
+}
+
+.texto1 h3 {
+  color: gray;
+}
+
+.texto1 .saldo p {
+  position: relative;
+  top: 20px;
+  right: 160px;
+  color: rgb(0, 0, 0);
+}
+
+.texto1 .material-symbols-outlined {
+  position: relative;
+  top: 25px;
+  right: 120px;
+  color: #87b344;
+}
+
+.texto1 .material-symbols-outlined:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* --------------------------------------*/
+
+/* CARDS */
+
+.cards-content {
+  display: flex;
+  grid-area: cards-content;
+  position: relative;
+  /* width: 100%;
+  height: 0px; */
+  top: 5px;
+  text-transform: capitalize;
+  height: 100%;
+}
+
+/* --------------------------------------- */
+
+/* content */
+
+.content {
+  width: 100%;
+  height: 650px;
+  grid-area: content;
+  padding: 10px;
+  margin-top: 100px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  height: 500px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr {
+  color: #fff;
+  background: #008920;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th .material-symbols-outlined:hover {
+  background: #87b344;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+table tr td .material-symbols-outlined {
+  background-color: #87b344;
+  border-radius: 15px;
+  color: white;
+  font-size: 40px;
+}
+
+table tr td .material-symbols-outlined:hover {
+  color: #87b344;
+  background: white;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd) {
+  background: #f3f3f3;
+}
+.table tbody tr.active {
+  font-weight: bold;
+  color: #4ad489;
+}
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #008920;
+}
