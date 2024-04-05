@@ -26,18 +26,18 @@ body {
 
 #lateral-esquerda {
   grid-area: lateral-esquerda;
-  width: 100%;
-  height: 90%;
   background-color: #fafafa;
+  /* width: 150px; */
 }
 
 .marca {
   font-weight: bold;
+  width: 100px;
   display: flex;
   padding-left: 15px;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: #fafafa;
+  background: transparent;
   color: #87b344;
 }
 .marca img {
@@ -48,16 +48,12 @@ body {
   top: 10px;
 }
 nav {
-  position: relative;
   padding: 10px;
   background-color: #fafafa;
-  height: 100%;
-  width: 120px;
+  height: 80%;
+  width: 100px;
   overflow: hidden;
   transition: 1s;
-  top: 0;
-  bottom: 0;
-  left: 4;
 }
 
 nav:hover {
@@ -66,14 +62,9 @@ nav:hover {
   height: 85vh;
   overflow: hidden;
   transition: 1s;
-  top: 0;
-  bottom: 0;
-  left: 4;
   font-size: small;
   width: 280px;
   transition: 1s;
-  /* height: 89vh; */
-  /* padding: 10px; */
 }
 
 li:hover {
@@ -83,13 +74,11 @@ li:hover {
   left: 2px;
 }
 
-.material-symbols-outlined:hover {
-  color: #0b5202;
-}
-
 nav ul li {
   position: relative;
-  font-size: medium;
+  display: flex;
+  align-items: center;
+  font-size: small;
   padding: 15px;
   left: 30px;
 }
@@ -109,13 +98,13 @@ nav ul {
 .lista3 {
   background-color: #fafafa;
   position: relative;
-  top: 150px;
+  top: 270px;
 }
 
 .lista2 {
   background-color: #fafafa;
   position: relative;
-  top: 90px;
+  top: 140px;
 }
 
 /* ---------------------------- */
@@ -123,10 +112,9 @@ nav ul {
 /* BARRA DE PESQUISA/MEIO CIMA */
 
 #barra-pesquisa {
+  border: #436e01 2px solid;
   padding: 10px;
-  border: #87b34448 10px solid;
   width: 100%;
-  height: 75%;
   background-color: white;
   grid-area: barra-pesquisa;
   display: flex;
@@ -139,39 +127,49 @@ nav ul {
   border-radius: 70%;
   position: relative;
   top: 9px;
+  left: 10px;
+}
+
+#barra-pesquisa .input {
+  display: flex;
+  height: 25px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background: #c4e477;
+  color: rgb(0, 0, 0);
+  outline: none;
+  box-sizing: border-box;
 }
 
 #barra-pesquisa .material-symbols-outlined {
   color: white;
 }
 
+.barra-pesquisa-texto {
+  width: 120px;
+}
+
 #barra-pesquisa-texto {
-  background: transparent;
+  background-color: #ffffff;
 }
 
 .barra-pesquisa-texto h2 {
   background-color: white;
 }
 
-.perfil {
+#perfil {
+  background: transparent;
   position: relative;
   display: flex;
   right: 30px;
 }
 
-#perfil {
-  background-color: white;
-}
-
-.perfil h3 {
-  background-color: white;
-}
-
-.perfil .material-symbols-outlined {
+#perfil .material-symbols-outlined {
+  color: #436e01;
   position: relative;
-  display: flex;
-  top: 22px;
-  color: #87b344;
+  top: 45px;
+  right: 50px;
 }
 
 /* ----------------------- ----------*/
@@ -212,11 +210,6 @@ nav ul {
   color: #87b344;
 }
 
-.texto1 .material-symbols-outlined:hover {
-  color: black;
-  cursor: pointer;
-}
-
 /* --------------------------------------*/
 
 /* CARDS */
@@ -225,8 +218,6 @@ nav ul {
   display: flex;
   grid-area: cards-content;
   position: relative;
-  /* width: 100%;
-  height: 0px; */
   top: 5px;
   text-transform: capitalize;
   height: 100%;
@@ -252,6 +243,7 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
+
 .table {
   height: 500px;
   border-collapse: collapse;
